@@ -4,12 +4,14 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 
-app.use(
-  cors({
-    origin: process.env.CORS_ORIGIN,
-    credentials: true,
-  })
-);
+app.use(cors());
+
+// app.use(
+//   cors({
+//     origin: process.env.CORS_ORIGIN,
+//     credentials: true,
+//   })
+// );
 
 // "use" is a method that allows you to add middleware to the application
 
