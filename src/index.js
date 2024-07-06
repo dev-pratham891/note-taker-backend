@@ -54,7 +54,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/notes", notesRouter);
 
 app.get("/", (req, res) => {
-  res.send(`hello world`);
+  res.send(`The backend app is running on this port. Try and test out the routes using testing softwares like postman. For routes, refer to https://github.com/Akhilesh29/SecureU-Note-Taker-Backend#testing`);
 });
 
 // export { app };
